@@ -20,10 +20,10 @@
                         <form role="form" action="<?php echo page_url('login');?>" method="POST">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                    <input class="form-control" placeholder="E-mail" name="email" type="email" value="test@test.it">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="workapptest">
                                 </div>
 
                                 <!-- Change this to a button or input when using this as a form -->
