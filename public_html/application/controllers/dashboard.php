@@ -28,14 +28,7 @@ class Dashboard extends CI_Controller {
      */
     public function index(){
 
-        $this->load->model('dashboard_model');
-        $result = $this->dashboard_model->getExamsList();
-
-        $data['exams'] = $result;
-
-        $this->load->view('header_view');
-        $this->load->view('dashboard_view', $data);
-        $this->load->view('footer_view');
+        redirect('/exercise');
     }
 
     /**
