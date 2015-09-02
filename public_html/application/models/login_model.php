@@ -26,16 +26,18 @@ class Login_model extends CI_Model{
     public function validate(){
 
         // grab user input
-        $username = $this->security->xss_clean($this->input->post('email'));
-        $password = $this->security->xss_clean($this->input->post('password'));
+        $email      = $this->security->xss_clean($this->input->post('email'));
+        $password   = $this->security->xss_clean($this->input->post('password'));
 
         // Prep the query
-        $this->db->where('username', $username);
+        $this->db->where('email', $email);
         $this->db->where('password', md5($password));
-        $this->db->where('active', TRUE);
+
+        //used for check if registration is active (registration confirm module)
+        //$this->db->where('active', TRUE);
 
         // Run the query
-        $query = $this->db->get('users');
+        $query = $this->db->get('user');
 
         // Let's check if there are any results
         if($query->num_rows() == 1){
