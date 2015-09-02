@@ -14,7 +14,7 @@ class Exercise extends CI_Controller {
     }
 
     /**
-     * Index
+     * Mostro tutti gli esercizi presenti sul database
      *
      * @access public
      * @author Team Ragnarok
