@@ -32,7 +32,7 @@
                     </li>
 
                     <li><a href="<?php echo page_url('dashboard') ?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
-                    <li><a href="<?php echo page_url('dashboard/addExam') ?>"><i class="fa fa-bar-chart-o fa-fw"></i> Workouts</a></li>
+                    <li><a href="<?php echo page_url('dashboard/addExam') ?>"><i class="fa fa-bar-chart-o fa-fw"></i> Exercises</a></li>
                     <li><a href="<?php echo page_url('dashboard/logout') ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
                     </li>
                 </ul>
@@ -157,7 +157,11 @@
                                 <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Last update</th>
+                                    <th>Series</th>
+                                    <th>Repetitions</th>
+                                    <th>Pause</th>
+                                    <th>Muscles</th>
+                                    <th>Frequency</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
